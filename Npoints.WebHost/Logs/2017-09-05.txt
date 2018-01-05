@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>e8338bad-fe5e-4c1e-8368-2414a606b2ed</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-05 13:25:38:148
+Message: Duplicate name 'Alvin_DataReportTwo' for data command in file 'C:\Users\az8g\Documents\TMXK_Team_Projects\intern-rebulid-npoint-api\Npoints.WebHost\Configuration\Data\DbCommand_Alvin.config'..
+Uri: /DataReport?WhichReport=Two.
+Exception Type: System.ApplicationException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6e54993d\00d2a537_ec25d301\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommandManager.LoadAllDataCommandFiles()
+   at Newegg.Oversea.DataAccess.DataCommandManager.InitConfig()
+   at Newegg.Oversea.DataAccess.DataCommandManager.GetDataCommand(String sqlNameInConfig)
+   at Npoints.Service.Services.DataReportService_Alvin.OnGet(DataReport_Alvin request) in C:\Users\az8g\Documents\TMXK_Team_Projects\intern-rebulid-npoint-api\Npoints.Service\Services\DataReportService_Alvin.cs:line 50
+   at Newegg.API.Interfaces.RestServiceBase`1.Get(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

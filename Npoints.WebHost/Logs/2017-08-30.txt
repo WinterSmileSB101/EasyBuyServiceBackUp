@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>bd558129-8c2c-4b3e-8b07-39ec10badc3d</ID>
+  <Content>Error occured while Processing Request: /user
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.User'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'User', got string starting with: aaa
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\186df114_6120d301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>a4d420b3-046a-47e5-86f5-ba58d0c7c5c4</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-02 09:17:35:296
+Message: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index.
+Uri: /OrderList?OrderState=%D0%C2%B6%A9%B5%A5.
+Exception Type: System.ArgumentOutOfRangeException.
+Source: mscorlib.
+Module Name: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll.
+Stack Trace:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Npoints.Service.Services.OrderListService.OnGet(OrderList request) in C:\Users\az8g\Documents\TMXK_Team_Projects\intern-rebulid-npoint-api\Npoints.Service\Services\OrderListService.cs:line 63
+   at Newegg.API.Interfaces.RestServiceBase`1.Get(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>a45462fd-3c90-471c-b8e7-8f7dbd90fc23</ID>
+  <Content>Error occured while Processing Request: /OrderList?CostomerEmail=Kayla.H.Shu@newegg.com&amp;StartDate=Mon%20Jan%2001%201973%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;EndDate=Sat%20Sep%2002%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;OrderState=%E6%96%B0%E8%AE%A2%E5%8D%95&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6bcdf981\cb41c9ab_231ed301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>de0994c1-9f08-4b90-845a-a7c0179a0e97</ID>
+  <Content>Error occured while Processing Request: /OrderList?CostomerEmail=Kayla.H.Shu@newegg.com&amp;StartDate=Mon%20Jan%2001%201973%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;EndDate=Sat%20Sep%2002%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;OrderState=%E6%96%B0%E8%AE%A2%E5%8D%95&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6bcdf981\cb41c9ab_231ed301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>e552a094-c695-45e5-9743-e6b7dbcdc0cb</ID>
+  <Content>Error occured while Processing Request: /OrderList?CostomerEmail=Alvin.X.Zhang@newegg.com&amp;StartDate=Mon%20Jan%2001%201973%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;EndDate=Sat%20Sep%2002%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;OrderState=%E6%96%B0%E8%AE%A2%E5%8D%95&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6bcdf981\cb41c9ab_231ed301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>c249996c-9765-4901-b80d-9984f44cfe29</ID>
+  <Content>Error occured while Processing Request: /OrderList?&amp;StartDate=Mon%20Jan%2001%201753%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;EndDate=2017/9/2&amp;OrderState=%E6%96%B0%E8%AE%A2%E5%8D%95&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6bcdf981\cb41c9ab_231ed301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>235b439c-4f6e-4362-826e-136d40b00cf0</ID>
+  <Content>Error occured while Processing Request: /OrderList?&amp;StartDate=Mon%20Jan%2001%201753%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;EndDate=Sat%20Sep%2002%202017%2010:47:18%20GMT+0800%20(China%20Standard%20Time)&amp;OrderState=%E6%96%B0%E8%AE%A2%E5%8D%95&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\6bcdf981\cb41c9ab_231ed301\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>0b09980b-5c29-4904-8f06-50d61ed50477</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-02 11:19:54:444
+Message: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index.
+Uri: /OrderList?CostomerEmail=Alvin.X.Zhang@newegg.com&amp;StartDate=1973/1/1&amp;EndDate=2017/9/2&amp;OrderState=%E6%89%80%E6%9C%89&amp;format=json.
+Exception Type: System.ArgumentOutOfRangeException.
+Source: mscorlib.
+Module Name: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll.
+Stack Trace:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Npoints.Service.Services.OrderListService.OnGet(OrderList request) in C:\Users\az8g\Documents\TMXK_Team_Projects\intern-rebulid-npoint-api\Npoints.Service\Services\OrderListService.cs:line 108
+   at Newegg.API.Interfaces.RestServiceBase`1.Get(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

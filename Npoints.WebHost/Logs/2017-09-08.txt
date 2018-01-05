@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>81bbfd2f-be96-4d2c-8f03-304f97f7263f</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Fri%20Sep%2008%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>3e39c3da-c01e-4c5e-8496-1622a8654663</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Fri%20Sep%2008%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>a782fbef-be2f-49ed-a9b5-e37968ae928d</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Fri%20Sep%2008%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>b47a0ca0-8ca0-47fa-93e7-86599afe7dcf</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Fri%20Sep%2008%202017%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>2363931a-cc90-453b-b4b7-b81d75f8b860</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 15:13:11:095
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>6ab42ee2-7247-42a2-9e31-256c1b3f90cf</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 15:32:41:281
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>f2df2171-a103-49ac-b89f-2709b78c5a37</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 15:37:37:870
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>efa76d8b-a732-4f33-9218-2527950a7d86</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 15:58:43:300
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>3e88ba38-c03c-4aaa-ac24-e3c810f8d0ff</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 16:02:22:401
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>f63b0c36-af3c-4663-8604-dd183b3142a3</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-08 16:06:41:336
+Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ProductID', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>5d15446f-e99c-45c7-a0b6-f05bc319385b</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>245bcfe7-f24e-47cb-afa9-8327577a1f91</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>ded41849-9f8e-48ab-9d32-ef42ce7c9245</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>60945f1a-1f9f-4bf9-8bb0-72b116933368</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1de036ea-270a-4e89-a61e-09fdaf54eeea</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1e98be52-f1d3-4bca-8cce-9a15ed894140</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=Sun%20Aug%2031%202014%2000:00:00%20GMT+0800%20(China%20Standard%20Time)&amp;DateTo=2017/9/8&amp;format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

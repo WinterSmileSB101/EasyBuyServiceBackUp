@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>63a53baf-7ea6-4d9f-8ae2-9611ac50e0df</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-09 16:18:57:473
+Message: Conversion failed when converting date and/or time from character string.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostCategory_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType2`6[System.String,System.Nullable`1[System.Boolean],System.String,System.String,System.String,System.String][].
+Uri: /Category.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.CategoryService.OnPost(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 47
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Conversion failed when converting date and/or time from character string.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Conversion failed when converting date and/or time from character string.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>d5a40ee1-89ad-43ee-bc4e-71526fbecb74</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-09 16:20:52:347
+Message: Cannot insert the value NULL into column 'Enable', table 'NPoint.dbo.Category'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostCategory_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType2`6[System.String,System.Nullable`1[System.Boolean],System.String,System.String,System.String,System.String][].
+Uri: /Category.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.CategoryService.OnPost(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 47
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'Enable', table 'NPoint.dbo.Category'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'Enable', table 'NPoint.dbo.Category'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>ab58ccd3-9770-452a-9be8-40d98b38339f</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-09 18:10:40:957
+Message: Input string was not in a correct format..
+Uri: /Category?SplitArr=undefined2,.
+Exception Type: System.FormatException.
+Source: mscorlib.
+Module Name: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll.
+Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Npoints.Service.Services.CategoryService.OnDelete(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 89
+   at Newegg.API.Interfaces.RestServiceBase`1.Delete(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>441482e8-0fb3-4ea8-b66b-8050412fecb7</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-09 18:09:54:976
+Message: Input string was not in a correct format..
+Uri: /Category?SplitArr=undefined2,1,3,4,.
+Exception Type: System.FormatException.
+Source: mscorlib.
+Module Name: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll.
+Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Npoints.Service.Services.CategoryService.OnDelete(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 89
+   at Newegg.API.Interfaces.RestServiceBase`1.Delete(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>ab69d12d-966b-4bad-81ac-693556ba9fe4</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-09 18:12:27:237
+Message: Input string was not in a correct format..
+Uri: /Category?SplitArr=1,3,.
+Exception Type: System.FormatException.
+Source: mscorlib.
+Module Name: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll.
+Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Npoints.Service.Services.CategoryService.OnDelete(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 89
+   at Newegg.API.Interfaces.RestServiceBase`1.Delete(TRequest request).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

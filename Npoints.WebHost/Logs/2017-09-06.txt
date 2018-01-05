@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>85edd4ee-9971-4112-b06c-87dd1f90d959</ID>
+  <Content>Error occured while Processing Request: /ShoppingCart
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.ProductIDs'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'ProductIDs', got string starting with: ["3","2"]
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>29124c3c-210f-4dba-a47a-7a2579f1126c</ID>
+  <Content>Error occured while Processing Request: /ShoppingCart
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.ProductIDs'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'ProductIDs', got string starting with: ["3","2"]
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+  <ID>be7be435-ac94-48d3-9bdc-76244ff3b675</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-06 14:55:24:891
+Message: Must declare the scalar variable "@NPoints".
+Must declare the scalar variable "@AccountName".
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : Alvin_BackNpoints
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+{ OrderListID = 333333388, OrderState = 取消 }.
+Uri: /OrderList.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.OrderListService_Alvin.OnPost(OrderList_Alvin request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\OrderListService_Alvin.cs:line 232
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Must declare the scalar variable "@NPoints".
+Must declare the scalar variable "@AccountName".
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Must declare the scalar variable "@NPoints".
+Must declare the scalar variable "@AccountName".. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.ExecuteCommand(IDbConnection cnn, IDbTransaction transaction, String sql, Action`2 paramReader, Object obj, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<<<<<<< HEAD
+  <ID>43518dbd-686b-4853-b80c-64ad61717389</ID>
+  <Content>Error occured while Processing Request: /ShoppingCart
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.ProductIDs'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'ProductIDs', got string starting with: ["3","2"]
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+=======
+  <ID>822ddc00-5e6a-41e9-a5d4-cf6e6c4b078d</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=2017/6/6&amp;DateTo=2017/9/6?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+>>>>>>> 6736089d3a9afecbe6e4c153729ad947810f4e65
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<<<<<<< HEAD
+  <ID>43adb2b1-476b-456e-9f01-3f07e020cd4a</ID>
+  <Content>Error occured while Processing Request: /ShoppingCart
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.ProductIDs'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'ProductIDs', got string starting with: ["3","2"]
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+=======
+  <ID>3c05ff2f-3825-43a9-b32e-49a66d675cff</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=2017/6/6&amp;DateTo=2017/9/6?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+>>>>>>> 6736089d3a9afecbe6e4c153729ad947810f4e65
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<<<<<<< HEAD
+  <ID>ec81e91b-6870-4a48-b58e-83c764a57525</ID>
+  <Content>Error occured while Processing Request: /ShoppingCart
+ Exception: 
+Message: Could not deserialize 'application/json' request using Npoints.Service.Dtos.ProductIDs'
+Error: System.Runtime.Serialization.SerializationException: Type definitions should start with a '{', expecting serialized type 'ProductIDs', got string starting with: ["3","2"]
+   at ServiceStack.Text.Common.DeserializeTypeRefJson.StringToType(Type type, String strType, EmptyCtorDelegate ctorFn, Dictionary`2 typeAccessorMap)
+   at ServiceStack.Text.Common.DeserializeType`1.&lt;&gt;c__DisplayClass3.&lt;GetParseMethod&gt;b__1(String value)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromString(String value, Type type)
+   at ServiceStack.Text.JsonSerializer.DeserializeFromStream(Type type, Stream stream)
+   at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType).
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\ks33\AppData\Local\Temp\Temporary ASP.NET Files\vs\66ce716e\23e932fd\assembly\dl3\bdfa7691\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.HttpHandlers.RestHandler.CreateContentTypeRequest(HttpRequestWrapper httpReq, Type requestType, String contentType)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+=======
+  <ID>c46464cf-c775-4f1f-9d9d-7880b2b15b7e</ID>
+  <Content>Error occured while Processing Request: /ProductDetail?ProductName=&amp;DateFrom=2017/8/22&amp;DateTo=2017/9/6=format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: String was not recognized as a valid DateTime..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: String was not recognized as a valid DateTime.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DateTimeSerializer.ParseShortestNullableXsdDateTime(String dateTimeStr)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__a(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+>>>>>>> 6736089d3a9afecbe6e4c153729ad947810f4e65
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************

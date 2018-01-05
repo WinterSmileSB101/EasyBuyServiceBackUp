@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12d93478-0485-4708-a439-d4a0fabfef08</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-11 12:02:23:640
+Message: Cannot insert the value NULL into column 'ForbidBuy', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : PostProduct_Amber
+&lt;&lt;SQL Parameter(s)&gt;&gt; :
+&lt;&gt;f__AnonymousType24`20[System.String,System.String,System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Boolean],System.Nullable`1[System.Int32],System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Nullable`1[System.Int32],System.String,System.Nullable`1[System.Int32],System.Nullable`1[System.Int32]][].
+Uri: /ProductDetail.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter)
+   at Npoints.Service.Services.ProductDetailService.OnPost(ProductDetail request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\ProductDetailService.cs:line 105
+   at Newegg.API.Interfaces.RestServiceBase`1.Post(TRequest request).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ForbidBuy', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at CallSite.Target(Closure , CallSite , Type , String , CommandType , String , Int32 , Object )
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteNonQuery(Object parameter).
+
+Inner Exception:
+	Message: Cannot insert the value NULL into column 'ForbidBuy', table 'NPoint.dbo.Products'; column does not allow nulls. INSERT fails.
+The statement has been terminated.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Newegg.Oversea.DataAccess.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute7[T0,T1,T2,T3,T4,T5,T6,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
+   at CallSite.Target(Closure , CallSite , Type , DbConnection , String , Object , Object , Int32 , CommandType )
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteNonQuery(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>4468af68-3e49-4898-9b7c-fc6f01cf1b15</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=true
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1950e3e2-3831-4b17-8f98-b7ab8f8c5176</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=true
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>de88841d-336f-49a0-ac28-4636b83fd815</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>27dc15c9-c0bb-4763-824c-994f65e45fef</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>2926e31c-d4bd-4238-a75b-1bda80add6ca</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=true
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>2a609283-518d-4d91-92e9-af9979ee5f5c</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>66bb29ef-acb7-4e4c-a5c6-a9bba4a0a241</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-11 13:25:12:355
+Message: Incorrect syntax near '，'.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : GetCategoryList_Amber
+.
+Uri: /Category?Datalist=1.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Newegg.Oversea.DataAccess.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\93441253\006207b8_2ad5d201\Newegg.Oversea.DataAccess.dll.
+Stack Trace:    at Newegg.Oversea.DataAccess.DataCommand.ExecuteEntityList[T](Object parameter)
+   at Npoints.Service.Services.CategoryService.OnGet(Category request) in D:\data\git\intern-rebulid-npoint-api\intern-rebulid-npoint-api\Npoints.Service\Services\CategoryService.cs:line 24
+   at Newegg.API.Interfaces.RestServiceBase`1.Get(TRequest request).
+
+Inner Exception:
+	Message: Incorrect syntax near '，'.
+  <ID>cc7584d3-c56f-4600-b482-cd9a0689943d</ID>
+  <Content>Error occured while Processing Service
+ Exception: 
+Date: 2017-09-11 15:26:40:623
+Message: An expression of non-boolean type specified in a context where a condition is expected, near ','.
+&lt;&lt;Connection Name&gt;&gt; : NPoint
+&lt;&lt;Script Name&gt;&gt; : Alvin_GetAllHomePage
+.
+Uri: /homepage_alvin.
+Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataCommandException.
+Source: Npoints.Service.
+Module Name: C:\Users\az8g\AppData\Local\Temp\Temporary ASP.NET Files\vs\6248bc8c\d1b3df89\assembly\dl3\c4d72cec\11bcca20_cf2ad301\Npoints.Service.dll.
+Stack Trace:    at Npoints.Service.Services.HomePageService_Alvin.OnGet(HomePage_Alvin request) in C:\Users\az8g\Documents\TMXK_Team_Projects\intern-rebulid-npoint-api\Npoints.Service\Services\HomePageService_Alvin.cs:line 89
+   at Newegg.API.Interfaces.RestServiceBase`1.Get(TRequest request).
+
+Inner Exception:
+	Message: An expression of non-boolean type specified in a context where a condition is expected, near ','.
+. 
+	Exception Type: Newegg.Oversea.DataAccess.DbProvider.DataAccessException.
+	Source: Newegg.Oversea.DataAccess.
+	Stack Trace:    at Newegg.Oversea.DataAccess.DbHelper.ExecuteEntity[T](String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute6[T0,T1,T2,T3,T4,T5,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+   at Newegg.Oversea.DataAccess.DataCommand.ExecuteEntityList[T](Object parameter).
+
+Inner Exception:
+	Message: Incorrect syntax near '，'.. 
+	Message: An expression of non-boolean type specified in a context where a condition is expected, near ','.. 
+	Exception Type: System.Data.SqlClient.SqlException.
+	Source: .Net SqlClient Data Provider.
+	Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Newegg.Oversea.DataAccess.SqlMapper.&lt;QueryInternal&gt;d__31`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Newegg.Oversea.DataAccess.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute8[T0,T1,T2,T3,T4,T5,T6,T7,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)
+   at Newegg.Oversea.DataAccess.DbHelper.ExecuteEntity[T](String databaseName, CommandType cmdType, String cmdText, Int32 timeout, Object commandParameters).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>18ad38a1-e994-4701-90f2-6914800ea84e</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>f9642a91-7c54-43ae-8799-686d80daa39c</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>d5208d75-2cfb-48d6-9e74-52742665df62</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>94f319cb-8762-4dc6-b41e-7e5fb79cc433</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>243c1935-f4a2-41ed-afd2-cac69c40a42e</ID>
+  <Content>Error occured while Processing Request: /Category/Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__18(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>6de3331e-035f-4359-851f-631f4e6b9fc1</ID>
+  <Content>Error occured while Processing Request: /Category?Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__4(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>df4981ed-646b-47ac-9fb5-46c7057ea5f1</ID>
+  <Content>Error occured while Processing Request: /Category?Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__4(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>035208ae-7f34-41a5-a110-e4d94756540c</ID>
+  <Content>Error occured while Processing Request: /Category?Datalist=1?format=json
+ Exception: 
+Message: KeyValueDataContractDeserializer: Error converting to type: Input string was not in a correct format..
+Exception Type: System.Runtime.Serialization.SerializationException.
+Source: Newegg.API.Framework.
+Module Name: C:\Users\al5i\AppData\Local\Temp\Temporary ASP.NET Files\vs\2581abf7\bc763ce8\assembly\dl3\b134f02c\00e20523_b4e4d201\Newegg.API.Framework.dll.
+Stack Trace:    at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs)
+   at Newegg.API.ServiceHost.RestPath.CreateRequest(String pathInfo, Dictionary`2 queryStringAndFormData, Object fromInstance)
+   at Newegg.API.HttpHandlers.RestHandler.GetRequest(HttpRequestWrapper httpReq, RestPath restPath)
+   at Newegg.API.HttpHandlers.RestHandler.ProcessRequest(HttpRequestWrapper httpReq, HttpResponseWrapper httpRes, String operationName).
+
+Inner Exception:
+	Message: Input string was not in a correct format.. 
+	Exception Type: System.FormatException.
+	Source: mscorlib.
+	Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at ServiceStack.Text.Common.DeserializeBuiltin`1.&lt;GetParseFn&gt;b__4(String value)
+   at ServiceStack.Text.Common.JsReader`1.&lt;&gt;c__DisplayClassb`1.&lt;GetCoreParseFn&gt;b__7(String value)
+   at Newegg.API.Common.StringMapTypeDeserializer.PopulateFromMap(Object instance, IDictionary`2 keyValuePairs).
+</Content>
+  <CategoryName>ERROR</CategoryName>
+</LogEntry>
+**********************************************************************
